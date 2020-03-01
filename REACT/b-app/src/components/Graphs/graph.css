@@ -1,0 +1,21 @@
+.chart-container-line {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -48%;
+    height: 400px;
+    width: 1200px;
+  }
+  .chart-container-bar {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -18%;
+    height: 750px;
+    width: 550px;
+  }
+  .chart-container-don {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -18%;
+    height: 750px;
+    width: 450px;
+  }
