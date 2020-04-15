@@ -1,10 +1,14 @@
 #sidebar{
-    background-color: rgb(223, 215, 215);
+    background-color: #b3d9ff;
+    border-radius: 25px;
     width: 10%;
     min-height: 100vh;
-    margin-top: 7%;
+    margin-top: 6.4%;
+    font-family: "Montserrat", sans-serif;
+    
 }
 .side:link, .side:visited {
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: black;
@@ -16,12 +20,13 @@
   
   .side:hover, .side:active {
     font-size: 16px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   }
 
-img{
+/* img{
     margin-left: -80px;
     margin-top: -50px;
-}
+} */
 #header.header-scrolled {
     background: #fff;
     padding: 20px 0;

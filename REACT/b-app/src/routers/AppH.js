@@ -13,13 +13,15 @@ import BI from '../components/BackgroundImage/BI';
 import RG from '../components/Registeration/Registeration';
 import LT from '../components/Login/Login';
 import DA from '../components/Graphs/Graphs';
-import SearchAppoi from '../components/Appointments/Show Appointment';
-import AddAppoi from '../components/Appointments/Add Appointments';
-import EditAppoi from '../components/Appointments/Edit Appointments';
+// import SearchAppoi from '../components/Appointments/Show Appointment';
+// import AddAppoi from '../components/Appointments/Add Appointments';
+// import EditAppoi from '../components/Appointments/Edit Appointments';
 import PA from '../components/Patients/Show Patients';
-// import AddPatient from '../components/Appointments/Edit Appointments';
-// import SearchPatient from '../components/Appointments/Edit Appointments';
-// import EditPatient from '../components/Appointments/Edit Appointments';
+import APO from '../components/Appointments/Appointment';
+import SPD from '../components/Diagnosis/Show PD';
+import SDI from '../components/Diagnosis/Show Diagnosis';
+import ADi from '../components/Diagnosis/Diagnosis';
+import FAQ from '../components/FAQ/FAQ';
 import NotFoundPage from '../components/PageNotFound';
 
 
@@ -35,13 +37,18 @@ const AppH = () => (
         <Route path="/login" component={LT} />
         <Route path="/registeration" component={RG} />
         <Route path="/dashboard" component={DA} />
-        <Route path="/Patient" component={PA}/>
+        <Route path="/Patients" component={PA}/>
         {/* <Route path="/AddPatient" component={AddPatient}/> */}
         {/* <Route path="/SearchPatient" component={SearchPatient}/> */}
         {/* <Route path="/EditPatient" component={EditPatient}/> */}
-        <Route path="/AddApponitment" component={AddAppoi}/>
-        <Route path="/SearchAppointment" component={SearchAppoi}/>
-        <Route path="/EditAppointment" component={EditAppoi}/>
+        <Route path="/Appointments" component={APO}/>
+        {/* <Route path="/AddApponitment" component={AddAppoi}/> */}
+        {/* <Route path="/SearchAppointment" component={SearchAppoi}/> */}
+        {/* <Route path="/EditAppointment" component={EditAppoi}/> */}
+        <Route path="/ShowPatientforDiagnosis" component={SPD}/>
+        <Route path="/ShowDiagnosis" component={SDI}/>
+        <Route path="/AddDiagnosis" component={ADi}/>
+        <Route path="/FAQ" component={FAQ}/>
         <Route component={NotFoundPage} />
       </Switch>
       </div>  

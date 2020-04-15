@@ -1,5 +1,8 @@
 import React from 'react';
+import FP from '../FrontPage/FP';
+import './SP.css';
 import MaterialTable from 'material-table';
+// import { Link } from "react-router-dom";
 
 export default class Editable extends React.Component {
     constructor(props) {
@@ -54,10 +57,16 @@ export default class Editable extends React.Component {
 
     render() {
         return (
+            <div>
+                <FP/>
+                <div className="moveT">
+                {/* <Link to="/dashboard" class="btn btn-secondary btn-lg active" aria-pressed="true"> Go Back</Link> */}
             <MaterialTable
                 title="Patients"
                 columns={this.state.columns}
                 data={this.state.data}
+                padding='checkbox'
+                size='medium'
                 editable={{
 
                     onRowAdd: newData =>
@@ -114,8 +123,9 @@ export default class Editable extends React.Component {
                                         console.log(result);
                                     })
                                     // Ends here
-                                    this.setState({ data }, () => resolve());
-                                }
+                                    this.setState({ data }
+                                        // , () => resolve());
+                                    )}
                                 resolve()
                             }, 1000)
                         }),
@@ -223,6 +233,8 @@ export default class Editable extends React.Component {
                         }),
                 }}
             />
+            </div>
+            </div>
         )
     }
 }

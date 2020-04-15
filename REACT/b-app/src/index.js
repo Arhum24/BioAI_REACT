@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 // import App from './App';
+// import Pre from './components/Prescriptions/Prescription';
+// import Dia from './components/Diagnosis/Diagnosis';
+// import Diet from './components/Diet Plan/DietPlan';
+// import FAQ from './components/FAQ/FAQ'
 import AppH from './routers/AppH';
 // import Appo from './components/Appointments/Add Appointments';
 import * as serviceWorker from './serviceWorker';

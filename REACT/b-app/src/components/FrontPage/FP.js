@@ -37,7 +37,9 @@ export default class HP extends Component {
                                 <li class="menu-active">
                                     <Link to="/dashboard"> Dashboard </Link>
                                 </li>
-                                
+                                <li>
+                                    <Link to="/FAQ" > FAQ </Link>
+                                </li>
                                 <li>
                                     <Link to="/" onClick={this.Logout}> Logout </Link>
                                 </li>
@@ -49,10 +51,11 @@ export default class HP extends Component {
 
                 <div id="sidebar">
                     
-                    <a href="/" className="side"> Dashboard</a>
-                    <p>--------------------------------------</p>
-                    <Link to="/Patient" > Patient </Link>
-                    <a href="/" className="side">Appointment</a>
+                    <a href="/dashboard" className="side"> Dashboard</a>
+                    <p>----------------------------------------------</p>
+                    <Link to="/Patients" className="side"> Patients </Link>
+                    <Link to="/Appointments" className="side"> Appointments </Link>
+                    <Link to="/ShowPatientforDiagnosis" className="side"> Diagnosis </Link>
                     {/* <label>About</label>
                     <p>We are here to help you not replace you. This is a tool, you are still the architect</p> */}
                 </div>

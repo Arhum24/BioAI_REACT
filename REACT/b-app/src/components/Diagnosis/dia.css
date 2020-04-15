@@ -1,0 +1,73 @@
+.l{
+    margin-left: 45%x;
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imagebox{
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.cbox{
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.img{
+    max-width:400px;
+}
+
+.formbox{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.bt{
+    margin-top: 3%;
+    margin-left: 7%;
+    border-radius: 18px;
+    color: #fff;
+    background-color: #a9c21d;
+    border: solid 1px transparent;
+}
+
+.result{
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: center; 
+    color: red;
+}
+
+.file{
+    padding:1px; 
+    border:1px solid #ccc; 
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.file:focus{
+    border-color:#333;
+}
+
+.sub{
+  margin-top: 3%;
+  margin-left: 7%;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1d6dc2;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.sub:focus{
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+}
+

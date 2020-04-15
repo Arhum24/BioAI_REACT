@@ -10,6 +10,7 @@ export default class Registeration extends Component {
         super(props);
 
         this.state = {
+            redirect:false,
             username: "",
             name: "",
             cnic: "",
@@ -126,6 +127,7 @@ export default class Registeration extends Component {
 
                 // console.log(response.body)
                 if (response.ok) {
+                    this.setState({redirect:true});
                     let message = response.json();
                     // console.log(message);
                     // console.log(message.username);
@@ -152,6 +154,7 @@ export default class Registeration extends Component {
                     let message = response.json();
                     // console.log(message);
                     this.setState({ is_error: true });
+                    alert("Please Enter correct Credentials");
                     console.log("Something Went Wrong....");
 
                     return message;
@@ -160,9 +163,19 @@ export default class Registeration extends Component {
             }
             ).then(result => {
                 console.log(result);
+                if(this.state.redirect === true)
+                {
                 localStorage.setItem("id",result.id);
+                localStorage.setItem("username",result.username);
                 localStorage.setItem("name",result.name);
+                localStorage.setItem("cnic",result.cnic);
+                localStorage.setItem("licence",result.licence);
+                localStorage.setItem("email",result.email);
+                localStorage.setItem("password",result.password);
+                localStorage.setItem("qualification",result.qualification);
+                localStorage.setItem("phone_number",result.phone_number);
                 this.props.history.push('/dashboard');
+                }
                 const { is_error } = this.state;
                 if (is_error) {
                     var temp = this.state.registrationErrors
@@ -171,7 +184,9 @@ export default class Registeration extends Component {
                     this.errorChanges();
                 }
             }
-            ).catch(error => console.log(error));
+            ).catch(
+                error => 
+                    alert("Enter Correct Credentials"));
 
 
         event.preventDefault();

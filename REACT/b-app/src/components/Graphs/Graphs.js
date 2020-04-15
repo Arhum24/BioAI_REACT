@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FP from '../FrontPage/FP';
 import GraphLine from '../Graphs/GraphLine';
-import HorizontalLine from '../Graphs/HorizontalLine';
+import HorizontalBar from './HorizontalBars';
 import Doughnut from '../Graphs/Doughnut';
 
 export default class Graph extends Component{
@@ -10,7 +10,7 @@ export default class Graph extends Component{
             <div>
                 <FP/>
             <GraphLine/>
-            <HorizontalLine/>
+            <HorizontalBar/>
             <Doughnut/>
             </div>
         );
